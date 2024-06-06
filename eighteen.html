@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoice</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        #content {
+            width: 80%;
+            margin: auto;
+        }
+        .head {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo img {
+            max-width: 100px;
+        }
+        .name h2 {
+            margin: 0;
+        }
+        .left-header h2 {
+            margin: 0;
+        }
+        .due, .bill-to, .ship-to {
+            margin-top: 20px;
+        }
+        .bill-to h3, .ship-to h3 {
+            margin-bottom: 0;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        tr:nth-child(even) {
+            background-color: rgb(218, 216, 216);
+        }
+        .sub {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="content">
+        <div class="head">
+            <div class="logo">
+                <img src="logo.png" alt="Company Logo">
+            </div>
+            <div class="name">
+                <h2>&lt; Your Company Name &gt;</h2>
+                <p>&lt; Your Address &gt;</p>
+                <p>&lt; Your Contact Details &gt;</p>
+            </div>
+            <div class="left-header">
+                <h2>Invoice</h2>
+                <p>Date: &lt; Date &gt;</p>
+                <hr>
+                <p>Invoice No.: &lt; Invoice Number &gt;</p>
+            </div>
+        </div>
+        <div class="due">
+            <p>Payment items due on receipt, due in X days</p>
+        </div>
+        <div class="bill-to">
+            <h3>BILL TO</h3>
+            <hr>
+            <p>&lt; Contact Name &gt;</p>
+            <p>&lt; Client Company Name &gt;</p>
+            <p>&lt; Address &gt;</p>
+            <p>&lt; Phone &gt;</p>
+            <p>&lt; Email &gt;</p>
+        </div>
+        <div class="ship-to">
+            <h3>SHIP TO</h3>
+            <hr>
+            <p>&lt; Name | Dept &gt;</p>
+            <p>&lt; Client Company Name &gt;</p>
+            <p>&lt; Address &gt;</p>
+            <p>&lt; Phone &gt;</p>
+        </div>
+        <div class="tab">
+            <table>
+                <tr>
+                    <th>DESCRIPTION</th>
+                    <th>QTY</th>
+                    <th>UNIT PRICE</th>
+                    <th>TOTAL</th>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>000</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>000</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>000</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>000</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>000</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>000</td>
+                </tr>
+            </table>
+        </div>
+        <div class="conc">
+            <p>Remarks | Payment Instruction:</p>
+        </div>
+        <div class="sub">
+            <p>SUBTOTAL &nbsp;&nbsp;&nbsp;&nbsp;000</p>
+            <hr>
+            <p>DISCOUNT &nbsp; &nbsp; &nbsp; &nbsp; 000</p>
+            <hr>
+            <p>SUBTOTAL LESS DISCOUNT &nbsp; &nbsp; &nbsp; &nbsp; 000</p>
+            <hr>
+            <p>TAX RATE &nbsp; &nbsp; &nbsp; &nbsp; 000</p>
+            <hr>
+            <p>TOTA TAX &nbsp; &nbsp; &nbsp; &nbsp; 000</p>
+            <hr>
+            <p>SHIPPING | HANDELING &nbsp; &nbsp; &nbsp; &nbsp; 000</p>
+            <hr>
+            <div class="Sameline">
+                <p style="font-size: larger;">Balance Due &nbsp; &nbsp; &nbsp; &nbsp; <div class="total">&nbsp; &nbsp; &nbsp; &nbsp;-</div></p>
+                
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,16 @@
+nav{
+    background-color :yellow;
+    overflow:hidden;
+}
+nav a{
+    font-style: initial;
+    float:left;
+    color:black;
+    padding:10px;
+    margin:2.5px;
+    text-decoration:none;
+
+}
+nav :hover{
+    background-color: blueviolet;
+}

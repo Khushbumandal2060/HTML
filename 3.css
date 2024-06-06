@@ -1,0 +1,91 @@
+body{
+    background-color: rgb(252, 245, 237);
+    margin: 0px;
+    
+}
+header{
+    background-color: skyblue;
+    text-align: center;
+    font-family: itallic;
+    color:white;
+    padding:20px;
+    
+}
+h1{
+    color:red;
+}
+header.p{
+    text-align: center;
+    color:#6d90ee;
+
+}
+
+nav{
+    background-color: gold;
+    
+    overflow: hidden;
+
+}
+nav a{
+    font-family:normal;
+    font-size: 20px;
+    padding: 15px;
+    text-decoration: none;
+    color:black;
+    height:50px;
+    margin:2.5px;
+}
+nav a:hover{
+    background-color: rgba(149, 243, 227, 0.575);
+    color: white;
+}
+footer{
+    background-color: skyblue;
+    font-family: cursive;
+    color:white;
+    padding:20px;
+    clear:both;
+    text-align: center;
+}
+p{
+    font-family: itallic;
+    text-align: center;
+    font-size: larger;
+}
+  
+    img{
+        width:25%;
+        border-radius: 10px;
+        border: 2px solid black;    
+    }
+    .img{
+        width:20%;
+         
+    }
+  div.gallery{
+float:left;
+margin:5px;
+border:2px solid black;
+width:200px;
+
+  }
+  div.gallery img{
+    width:100%;
+    line-height:auto;
+  }
+    .galli{
+        width:20%;    }
+        h2{
+            text-align:center;
+        }
+input[type=text],textarea{
+    width:100%;
+}
+input[type="submit"]{
+    background-color: green;
+    color:white;
+    margin-bottom: 2px;
+    padding:2px;
+    cursor: pointer;
+}
+
