@@ -1,0 +1,35 @@
+.header {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+.menu{
+    background-color: pink;
+    columns: black;
+    padding: 5px 0 5px, 25px;
+}
+.sidebar{
+    background-color: aquamarine;
+    width: 20px;
+    height: 308px;
+    text-align: center;
+    padding-top: 20px;
+    float: left;
+}
+.content{
+    background-color: cadetblue;
+    width: 80%;
+    height: 300px;
+    text-align: center;
+    padding-top: 20px;
+    float: left;
+    
+}
+.footer{
+    clear:both;
+    background-color: coral;
+    text-align: center;
+    padding: 5px;
+
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id = "content-box">
+    <h1>practice</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit ducimus consequuntur unde veniam, aperiam id culpa ex rem? Illo debitis commodi quis repudiandae sed ab ex quae explicabo molestiae inventore!</p>
+    
+    </div>
+    <button type="button" id="hide">Hide paragraph</button>
+    <button type="button" id="show">Show paragraph</button>
+    <script type ="text/javascript">
+        //retrieving Dom nides/elements
+        let hide = document.getElementById("hide"),
+          show = document.getElementById("show"),
+          contentBox = document.getElementById("content-box");
+
+          //event on wanted element
+          //element.addEventListener("event", callback_function())
+          hide.addEventListener("click", function() {
+              //logical statements
+              contentBox.style.display = "none";
+          })
+          show.addEventListener("click",function(){
+            contentBox.style.display = "block";
+          })
+    </script>
+</body>
+</html>

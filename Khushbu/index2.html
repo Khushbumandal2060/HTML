@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Client-side Scripting</title>
+</head>
+<body>
+    <h1>Data Manipulation with JS</h1>
+    <script type="text/javascript">
+        /*#1. data holders
+        - variable
+        -array
+        -object
+     #2. Data organization  or manipulation
+        -Function
+        -Blocks (above from ES6)
+     #3. Data manipulation with events
+        There are four types of events:
+        -mouse event,
+        -keyboard event,
+        -form event
+        -window event
+     #4. error and exception handling 
+
+        */
+       // variable making :(var, let, const)
+       var name;  //declare
+       name = "Your Name";  //define
+       console.log(name);   //printing
+       name = "My Name";  //redefine
+       var name; //redeclare
+       var name = "Hari Gopal";  //redclare and redefine together
+       console.log(name);
+
+
+       //now let keyword after var
+       let age;  //declare
+       age = 20;  //define
+       age = 17;  //redefine, work
+       console.log(age);
+       // let age;  //redclare won't work
+
+
+       //now, const keyword
+       //const address;  //declare only won't work
+       const address = "Kathmandu";  //declare and define only works
+       console.log(address);
+
+       /**
+        * Note: var - ESS and older
+        *      let and const: ES6 and newer
+        * */
+       //Array, ES5 and older
+       let persons = new Array("Your Name", 19, "Kathmandu");
+       //indexed array
+       console.log(persons[0], persons[1], persons[2]);
+       /**
+        * In JS:                
+        * -Methods and properties: namelCase
+        * -JS Word, Object, Array: PascalCase
+        
+        To print multile index as loop on JavaScript:
+        -if, Object(): map() method
+        -Note; we have other techniques also
+
+        use : arrayVariable.forEach(callback_function());
+        * */
+       persons.forEach(function(item) { //ESS
+        console.log(item);
+      })
+      persons.forEach((item)=> { //Es6
+    console.log(item);
+})
+
+let college = ["PKMC", ["English", "Math", "CFA"]];
+//let add multiple value of related term is possible through inherited array
+college.forEach(data => {
+
+    /**
+     * let's check if object
+     * */
+    if(typeof(data) == 'object') {
+        Array.from(data).forEach(child => {
+            console.log(child);
+        })
+    } else {
+        console.log(data);
+    }
+    
+     })
+    //checking length if array on the index of loop
+    /*if(data.length > 0) {
+            console.log(typeof(data));
+
+            //check prototype of object
+            console.log(Object());
+
+            //check prototype of Array
+            console.log(Array());
+            /*if the data comes as object data type inside forEach of array
+            - Let's convert into array from object to data.
+            
+           Array.from(data).forEach(child => {
+            console.log(child);
+           })
+        
+    } else {
+        console.log(data);
+    }
+})
+*/
+
+    </script>
+
+
+</body>
+</html>
+

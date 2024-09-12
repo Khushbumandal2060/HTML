@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> Form Detail</h1>
+    <!-- 
+        Form validation
+        #1 Client-side
+           -HTMLs validation
+           -Javascript validation   
+        #2 Server-side (client/front-end level)
+           -Programming specific (PHP, Java, NodeJS etc)
+        #3 Advance server-side (Database level)
+           -Database specific (SQL, MongoDB etc.)
+
+        Note:  to escape HTMLS validation if ay exists: use novalidate attribute on form tag
+    -->
+    <form action="#" method="post" name="form_name" enctype="multipart/form-data">
+        <div class="field-group">
+            <label for="fname">Full Name</label>
+            <input type="text" id="fname" name="fname" value="" required>
+        </div>
+        <div class="field-group">
+            <label for="docs">Document</label>
+            <input type="file" id="docs" name="docs" value="">
+        </div>
+        <div class="field-group">
+            <label for="published">Publish Date</label>
+            <input type="date" id="published" name="published" value="">
+        </div>
+        <div class="field-group">
+            <label for="pcolor"> Product Color</label>
+            <input type="color" id="pcolor" name="pcolor" value="">
+        </div>
+        <div class="field-group">
+            <label for="total"> Total</label>
+            <input type="number" id="total" name="total" value="5" readonly disabled>
+            <!-- readonly / disable -->
+        </div>
+        <input type="hidden" name="roomid" value="R001">
+        <!-- Hidden field will be added with default value -->
+        <fieldset>
+            <legend>Service Detail</legend>
+            <div class="field-group">
+                <h4>Services</h4>
+                <div class="subfield">
+                    <input type="checkbox" id="rafting" name="Service" value="rafting">
+                    <label for="rafting">Rafting</label>
+                </div>
+                <div class="subfield">
+                    <input type="checkbox" id="hiking" name="Service" value="hiking">
+                    <label for="hiking">hiking</label>
+                </div>
+            </div>
+        </fieldset>
+        <div class="field-group">
+            <h4>Gender</h4>
+            <div class="subfield">
+                <label for=""> Total</label>
+            <input type="number" id="total" name="total" value="5" readonly disabled>
+            </div>
+        </div>
+         <button type="submit" name="submit">Submit</button>
+
+    </form>
+</body>
+</html>

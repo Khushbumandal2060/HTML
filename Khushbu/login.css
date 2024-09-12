@@ -1,0 +1,59 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    background-image: url('coffee.jpg');
+        margin: 0%;
+        padding: 0%;
+    
+        background-size: 100% 740px;
+    }
+
+.contain{
+    width:300px;
+    height: 400px;
+    background-color: black;
+    margin-left: 36%;
+    margin-top: 7%;
+    text-align: center;
+    color: white;
+}
+.contain .text{
+    position: relative;
+    top: 7%;
+}
+.inp1{
+    border: none;
+    background-color: black;
+    border-bottom: 3px solid white;
+    width: 250px;
+    font-size: 20px;
+    margin-top: 40px;
+    outline: none;
+    color: white;
+}
+.text button{
+    width: 250px;
+    height: 44px;
+    background-color: rgb(43, 141, 141);
+    color: black;
+    border: none;
+    font-size: 22px;
+    border-radius: 25px;
+    margin-top: 20px;
+}
+p{
+    margin-top: 30px;
+    font-size: 20px;
+}
+p span{
+    color: aqua;
+    font-size:large;
+}
+
+
+
+
+
+

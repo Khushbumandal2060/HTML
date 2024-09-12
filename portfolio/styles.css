@@ -1,0 +1,84 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.contact-info p {
+    margin: 0;
+}
+
+.logo-name {
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.logo img {
+    width: 50px;
+    height: auto;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: #f4f4f4;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.recent-posts {
+    width: 25%;
+}
+.recent-posts ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.content {
+    width: 70%;
+}
+
+.image img {
+    width: 100%;
+    height: auto;
+}
+
+.description p {
+    margin: 10px 0;
+}
+
+footer {
+    text-align: centre;
+    padding:10px 0;
+    border-top:1px solid #ccc;
+    margin-top:20px;
+}

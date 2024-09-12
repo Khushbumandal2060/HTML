@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML form</title>
+</head>
+<body>
+    <h1>Basic Form</h1>
+    <form action="#" method="GET" name="form_name">
+        <div class="field-group">
+        <label for="fname">Fullname</label>
+        <input type="text" name="Fullname" id="fname" value="" placeholder="i.o. Full name">
+        </div>
+
+        <div class="field-group">
+        <label for="email">E-mail</label>
+        <input type="email" name="email" id="email" value="">
+    </div>
+    <div class="field-group">
+        <label for="pwd">password</label>
+        <input type="password" name="password" id="pwd" value="" >
+        </div>
+
+        <div class="field-group">
+        <label for="photo">photo</label>
+        <input type="file" name="photo" id="photo" value="">
+    </div>
+
+        <!--<input type="submit" value="send message">-->
+        <button type="submit">Send message</button>   
+    </form>
+    <!--If you have file to ssubit on form:
+        -How do you check file  size?
+        -How do you check file (MIME) type?
+        -How do you handle, if error exists?
+        -How to move uploading file to the project/server
+    folder/directory?
+
+-This all question can't be solved by GET method
+simply (only file name store and moving on server folder is possible).
+
+on POST method, all field's data will be 
+submitted hiddenly (not showing on QSP like GET)
+
+-But, having file:
+     -if GET method exists: not required
+      encryption
+     -if POST method exists: required form on encrytion
+     -Because, with POST method, file from fild send multple values/attributes
+
+     - encryption type on HTML form: 
+      entype="multipart/form-data"
+    -->
+
+    <form action="#" method="POST" name="booking_name"
+        entype="multipart/form-data" >
+                <div class="field-group">
+        <label for="fname">Fullname</label>
+        <input type="text" name="Fullname" id="fname" value="" placeholder="i.o. Full name">
+        </div>
+
+        <div class="field-group">
+        <label for="email">E-mail</label>
+        <input type="email" name="email" id="email" value="">
+    </div>
+    <div class="field-group">
+        <div class="field-group">
+        <label for="photo">photo</label>
+        <input type="file" name="photo" id="photo" value="">
+    </div>
+
+        <!--<input type="submit" value="send message">-->
+        <button type="submit">Send message</button>
+        <button type="reset">Reset Form Data</button>   
+    </form>
+    <pre>
+        URL component:
+        http://www.abc.com:80/contact/?key=value&key=value
+
+        -http: protocol
+        -www: domain prefix
+        -abc.com: domain
+        -80: port number of http
+        -if HTTPS: S-SSL: secure socket layer:port: 443
+        -Therefore:HTTPS: uses two parts: 80 for localhost
+        and 443 for S-SSL
+        -contact: slug/pathname
+        - ?key=value: Query String parameter
+        -URL: Unified Resource Identifier
+            Type:-URL: Locator
+                 -URN: Name
+    </pre>
+
+
+</body>
+</html>

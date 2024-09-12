@@ -1,0 +1,76 @@
+form{
+    border: 1px dashed coral;
+    padding: 40px; /*all side */
+    width:400px;
+    
+    margin: 0 auto; /* top-bottom left-right */
+   /* box-shadow: x-axis y-axis left-right shadow-size shadow-spread color;
+   box-shadow: 10px 10px 22px o rgba(0,0,0,0.4);*/
+   box-shadow: 0 0 22px 0 rgba ;
+}
+
+/* CSS Box Model:
+-content - padding - border - margin
+
+-padding/margin: top right bottom left
+-padding/margin: top right-left bottom
+-padding/margin: top bottom lleft-right
+-padding/margin: all side
+
+-Long-hand writing
+  - padding-top, padding-bottom, padding-right,padding-left
+  */
+
+  input{
+    width: 100%;
+  }
+
+ [type*='checkbox'] {
+    width:auto ;
+  }
+
+  /* Group selector */
+  input,
+  label {
+    vertical-align: middle;
+  }
+  /* Next element selector 
+  -Instead: [for*=*remember*] */
+  [type*='checkbox'] + label {
+    font-size: 13px;
+    font-style: italic;
+  }
+
+  /* classname selector */
+  .info-box {
+    font-size: 13px;
+  }
+  /*Direct child element selector */
+  .info-box > a{
+    color: coral;
+    text-decoration: none;
+    font-weight: 700;
+  }
+  /* All child element selector (with pseudo class - hover) */
+  .info-box a:hover {
+    text-decoration: underline;
+  }
+  /* combination of tagname selector and attribute selector */
+  button[type*='submit'] {
+    background-color: coral;
+    border: 0;
+    padding: 10px 20px;
+    margin-top: 10px;
+    color: white;
+    cursor: pointer;
+    transition: 0,3s;
+  }
+
+  button[type*='submit']:hover {
+    background-color: chocolate;
+    transform: translateY(-3px);
+  }
+
+  .field-group{
+    margin-bottom: 10px;
+  }

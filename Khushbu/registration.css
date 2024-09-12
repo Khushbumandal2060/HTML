@@ -1,0 +1,80 @@
+form{
+    border: 1px dashed rgb(106, 151, 151);
+    padding: 40px; /*all side */
+    width:400px;
+    
+    margin: 0 auto; /* top-bottom left-right */
+   /* box-shadow: x-axis y-axis left-right shadow-size shadow-spread color;
+   box-shadow: 10px 10px 22px o rgba(0,0,0,0.4);*/
+   box-shadow: 0 0 22px 0 gray;
+}
+
+input{
+    width: 100%;
+}
+body {
+    background-image: url('age.jpg');
+    margin: 0%;
+    padding: 0%;
+
+    background-size: 100% 740px;
+}
+
+/* CSS Box Model:
+-content - padding - border - margin
+
+-padding/margin: top right bottom left
+-padding/margin: top right-left bottom
+-padding/margin: top bottom lleft-right
+-padding/margin: all side
+
+-Long-hand writing
+  - padding-top, padding-bottom, padding-right,padding-left
+  */
+
+
+
+ [type*='checkbox'] {
+    width:auto ;
+  }
+
+  /* Group selector */
+  input,
+  label {
+    vertical-align: middle;
+  }
+  /* Next element selector 
+  -Instead: [for*=*remember*] */
+  [type*='checkbox'] + label {
+    font-size: 13px;
+    font-style: italic;
+  }
+
+  
+  .info-box {
+    font-size: 13px;
+  }
+
+  
+  .info-box a:hover {
+    text-decoration: underline;
+  }
+  /* combination of tagname selector and attribute selector */
+  button[type*='submit'] {
+    background-color: plum;
+    border: 0;
+    padding: 10px 20px;
+    margin-top: 10px;
+    color: white;
+    cursor: pointer;
+    transition: 0,3s;
+  }
+
+  button[type*='submit']:hover {
+    background-color: aqua;
+    transform: translateY(-3px);
+  }
+
+  .field-group{
+    margin-bottom: 10px;
+  }
